@@ -3,7 +3,6 @@ import axios from 'axios'
 const URI = process.env.REACT_APP_BACKENDURI || 'http://localhost:3001';
 
 const get = async (endpoint) => {
-
     try {
         const url = URI.concat(endpoint);
 

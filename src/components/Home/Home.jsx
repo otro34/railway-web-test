@@ -20,13 +20,13 @@ const Home = () => {
     } 
 
     const professorTableRows = coursesData.map(item => {
-        const {id, name, level, idProfessor } = item
+        const {id, name, level, professor } = item
         return (
           <tr>
             <td>{id}</td>
             <td>{name}</td>
             <td>{level}</td>
-            <td>{idProfessor}</td>
+            <td>{professor.name} {professor.lastName}</td>
           </tr>  
         )
     })
